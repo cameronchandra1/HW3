@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  {% if text %}
+
+    The tweet with the most non whitespae characters is: 
+      <br>
+          <b> {{ text }} posted by: @{{ display_name }} {{ username }} </b>
+
+
+
+{% else %}
+
+    There are no saved tweets to show.
+
+{% endif %}
+
+</div>
+
+
+{% endblock %}
